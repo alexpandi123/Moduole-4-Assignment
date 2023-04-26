@@ -1,10 +1,10 @@
-const URL = `https://dummyjson.com/products`;
+const DUMMY_URL = `https://dummyjson.com/products`;
 const pageDiv = document.getElementById('content-of-page');
 
 fetchURLforProducts();
 
 function fetchURLforProducts () {
-    fetch (URL) 
+    fetch (DUMMY_URL) 
     .then (r => r.json())
     .then (data => {
         console.log(data);
@@ -19,7 +19,7 @@ function fetchURLforProducts () {
   <div class="card-body">
     <h5 class="card-title">${productTitle}</h5>
     <p class="card-text">${productDescription}</p>
-    <a href="iPhone9.html" class="btn btn-primary">More information</a>
+    <a href="moreinfo.html" class="btn btn-primary">More information</a>
   </div>
 </div>
             `

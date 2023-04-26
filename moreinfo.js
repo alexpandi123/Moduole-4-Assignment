@@ -1,10 +1,10 @@
-const URL = `https://dummyjson.com/products`;
+const DUMMY_URL = `https://dummyjson.com/products`;
 const pageDiv = document.getElementById('content-of-page-iphone');
 
 fetchURLforProducts();
 
 function fetchURLforProducts () {
-    fetch (URL) 
+    fetch (DUMMY_URL) 
     .then (r => r.json())
     .then (data => {
         console.log(data);
